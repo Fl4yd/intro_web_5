@@ -9,8 +9,8 @@ async function drawMap()  {
   const url = "https://geo.stat.fi/geoserver/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=tilastointialueet:kunta4500k&outputFormat=json&srsName=EPSG:4326";
   const mapPromise = await fetch(url);
   const data = await mapPromise.json();
-  const dataMigrationPos = await getMigrationData('https://statfin.stat.fi/PxWeb/sq/4bb2c735-1dc3-4c5e-bde7-2165df85e65f');
-  const dataMigrationNeg = await getMigrationData('https://statfin.stat.fi/PxWeb/sq/944493ca-ea4d-4fd9-a75c-4975192f7b6e');
+  const dataMigrationNeg = await getMigrationData('https://statfin.stat.fi/PxWeb/sq/4bb2c735-1dc3-4c5e-bde7-2165df85e65f');
+  const dataMigrationPos = await getMigrationData('https://statfin.stat.fi/PxWeb/sq/944493ca-ea4d-4fd9-a75c-4975192f7b6e');
   //const names = data.
   console.log(dataMigrationPos)
   console.log(dataMigrationNeg)

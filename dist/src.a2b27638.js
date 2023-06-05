@@ -4839,7 +4839,7 @@ function drawMap() {
 }
 function _drawMap() {
   _drawMap = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
-    var url, mapPromise, data, dataMigrationPos, dataMigrationNeg, idx;
+    var url, mapPromise, data, dataMigrationNeg, dataMigrationPos, idx;
     return _regeneratorRuntime().wrap(function _callee2$(_context2) {
       while (1) switch (_context2.prev = _context2.next) {
         case 0:
@@ -4855,11 +4855,11 @@ function _drawMap() {
           _context2.next = 9;
           return getMigrationData('https://statfin.stat.fi/PxWeb/sq/4bb2c735-1dc3-4c5e-bde7-2165df85e65f');
         case 9:
-          dataMigrationPos = _context2.sent;
+          dataMigrationNeg = _context2.sent;
           _context2.next = 12;
           return getMigrationData('https://statfin.stat.fi/PxWeb/sq/944493ca-ea4d-4fd9-a75c-4975192f7b6e');
         case 12:
-          dataMigrationNeg = _context2.sent;
+          dataMigrationPos = _context2.sent;
           //const names = data.
           console.log(dataMigrationPos);
           console.log(dataMigrationNeg);
