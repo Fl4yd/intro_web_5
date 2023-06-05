@@ -4864,8 +4864,8 @@ function _drawMap() {
           console.log(dataMigrationPos);
           console.log(dataMigrationNeg);
           for (idx = 0; idx < data.features.length; idx++) {
-            data.features[idx].properties.posMigration = dataMigrationPos.dataset.value[idx];
-            data.features[idx].properties.negMigration = dataMigrationNeg.dataset.value[idx];
+            data.features[idx].properties.posMigration = dataMigrationPos.dataset.value[idx + 1];
+            data.features[idx].properties.negMigration = dataMigrationNeg.dataset.value[idx + 1];
           }
           console.log(data.features);
           initMap(data);
